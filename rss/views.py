@@ -7,6 +7,8 @@ def rss3(request):
 	import sys
 	import requests
 	from bs4 import BeautifulSoup
+	from models import Feed
+	
 	feed = Feed.objects.all()
 	rsscreater={}
 
