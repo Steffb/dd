@@ -1,6 +1,8 @@
 from django.conf.urls import patterns, include, url
 from hellodjango.views import *
 from django.contrib import admin
+from rss.views import rss3
+
 admin.autodiscover()
 
 urlpatterns = patterns('',
