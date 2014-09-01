@@ -38,7 +38,7 @@ def rss3(request):
 		tempdict=mydict[k]
 
 		myrequest = requests.get(v)
-		soup = BeautifulSoup(myrequest.text, 'xml')
+		soup = BeautifulSoup(myrequest.text)
 		items = soup.find_all('item')
 		for item in items:
 	        
