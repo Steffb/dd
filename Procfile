@@ -1,1 +1,1 @@
-web: gunicorn hellodjango.wsgi --log-file -
+web: waitress-serve --port=$PORT {dd}.wsgi:application
